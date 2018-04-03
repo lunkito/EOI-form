@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Yuhu!</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Curriculum<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Formulario inutil</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="container">
+  <form action="index.html" method="post">
+    <div class="form-group">
+      <label for="name">Nombre</label>
+      <input class="form-control" type="text" name="name" required pattern="[a-zA-Z]*">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Apellidos</label>
+      <input class="form-control" type="text" name="lastName" required pattern="[a-zA-Z]*">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input class="form-control" type="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="address">DNI</label>
+      <input class="form-control" type="text" name="address">
+    </div>
+    <div class="form-group">
+      <label for="textarea">Comentario</label>
+      <textarea class="form-control" name="textarea" rows="8" ></textarea>
+    </div>
+    <input type="submit" class="btn btn-success" value="Enviar">
+  </form>
+</section>
+
+<footer>
+
+</footer>
+
+<!-- <script src="js/bootstrap.bundle.js" charset="utf-8"></script> -->
+</body>
+</html>
